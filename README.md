@@ -43,7 +43,9 @@ Parameters
 
 
 
-Example Input
+## Example Input
+
+```text
 Dataset name(str): Bitcoin_otc
 Theta(float): 0.5
 K(int): 2
@@ -52,8 +54,9 @@ Alpha(float): 1
 T_s(int): 0
 T_e(int): 10
 
+## Example  Output
 
-Example Output
+```text
 (Bitcoin_otc-0.5-2-1-1.0_WCF.txt)
 Index construction time: 4.894751 s
 Running time of query: 0.267192 s
@@ -67,8 +70,9 @@ Nodes List:
 ========================================
 
 
-Run the Code
+## Run the Code
 
 Execute the main script:
 
+```bash
 python run.py
