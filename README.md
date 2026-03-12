@@ -30,20 +30,6 @@ Data is organized in **`.gml` format**, where:
 - `networkx == 3.3`  
 - `click == 8.1.7`  
 
-Install dependencies via:
-
-```bash
-pip install networkx==3.3 click==8.1.7
-
----
-
-## Run the Code
-
-Execute the main script:
-
-```bash
-python run.py
-
 ---
 
 ## Parameters
@@ -87,3 +73,17 @@ Option 1:
   Edges Size:    1235
 Nodes List:
 ========================================
+
+Install dependencies via:
+
+```bash
+pip install networkx==3.3 click==8.1.7
+
+---
+
+## Run the Code
+
+Execute the main script:
+
+```bash
+python run.py
