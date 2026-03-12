@@ -30,9 +30,20 @@ Data is organized in **`.gml` format**, where:
 - `networkx == 3.3`  
 - `click == 8.1.7`  
 
+Install dependencies via:
 
-## Parameters | Parameter | Description | |---------------|------------------------------------------------------------| | Dataset name | Name of the dataset folder (string) | | θ (Theta) | Edge weight threshold, float in [0,1] | | k (K) | k-core constraint (integer) | | query | Query vertex | | α (Alpha) | Balance factor for community size and duration (positive float) | | T_s | Start timestamp of query interval (inclusive, integer) | | T_e | End timestamp of query interval (exclusive, integer) | --- ## Example Input
-text
+```bash
+pip install networkx==3.3 click==8.1.7
+Parameters
+Parameter	Description
+Dataset name	Name of the dataset folder (string)
+θ (Theta)	Edge weight threshold, float in [0,1]
+k (K)	k-core constraint (integer)
+query	Query vertex
+α (Alpha)	Balance factor for community size and duration (positive float)
+T_s	Start timestamp of query interval (inclusive, integer)
+T_e	End timestamp of query interval (exclusive, integer)
+Example Input
 Dataset name(str): Bitcoin_otc
 Theta(float): 0.5
 K(int): 2
@@ -40,26 +51,20 @@ query(str): 1
 Alpha(float): 1
 T_s(int): 0
 T_e(int): 10
----
-## Example Output
-text (Bitcoin_otc-0.5-2-1-1.0_WCF.txt) 
-Index construction time: 4.894751 s 
-Running time of query: 0.267192 s 
-Found 1 optimal subgraph(s): 
-======================================== 
-Option 1: 
-Vertices Size: 430 
-Edges Size: 1235 
+Example Output
+(Bitcoin_otc-0.5-2-1-1.0_WCF.txt)
+Index construction time: 4.894751 s
+Running time of query: 0.267192 s
+
+Found 1 optimal subgraph(s):
+========================================
+Option 1:
+  Vertices Size: 430
+  Edges Size:    1235
 Nodes List:
-======================================== 
-
-Install dependencies via:
-bash
-pip install networkx==3.3 click==8.1.7
-
----
-
-## Run the Code
+========================================
+Run the Code
 
 Execute the main script:
-bash python run.py
+
+python run.py
